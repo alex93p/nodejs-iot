@@ -1,0 +1,227 @@
+{
+  "message": "Macchina creata",
+  "data": {
+    "iot": {
+      "credentials": [
+        {
+          "expirationTime": {
+            "seconds": "0",
+            "nanos": 0
+          },
+          "publicKey": {
+            "format": "ES256_PEM",
+            "key": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEEkVgKxcTgQMzyZ0jJ4ehtmbu6h9g\nk097XeorlzZG2GEbFpaimEoF4neinK2NPcmgwz6X8t4dAAatlB1WseSS8A==\n-----END PUBLIC KEY-----\n"
+          },
+          "credential": "publicKey"
+        }
+      ],
+      "metadata": {
+        "device_code": "TEST-123456",
+        "class": "uta",
+        "model": "model_1",
+        "serial_number": "1234567890"
+      },
+      "id": "s8fbe2c6-f777-48df-abca-6f22f4e2c275",
+      "name": "projects/sgdgroup-iot-uta/locations/europe-west1/registries/test.uta-devices/devices/2872636266920087",
+      "numId": "2872636266920087",
+      "lastHeartbeatTime": null,
+      "lastEventTime": null,
+      "lastErrorTime": null,
+      "lastErrorStatus": null,
+      "config": {
+        "version": "1",
+        "cloudUpdateTime": {
+          "seconds": "1627283487",
+          "nanos": 40213000
+        },
+        "deviceAckTime": null,
+        "binaryData": {
+          "type": "Buffer",
+          "data": [
+            123,
+            34,
+            99,
+            111,
+            110,
+            102,
+            105,
+            103,
+            34,
+            58,
+            123,
+            34,
+            104,
+            101,
+            97,
+            116,
+            101,
+            114,
+            95,
+            116,
+            101,
+            109,
+            112,
+            95,
+            111,
+            102,
+            102,
+            34,
+            58,
+            50,
+            48,
+            44,
+            34,
+            104,
+            101,
+            97,
+            116,
+            101,
+            114,
+            95,
+            116,
+            101,
+            109,
+            112,
+            95,
+            111,
+            110,
+            34,
+            58,
+            49,
+            48,
+            44,
+            34,
+            112,
+            114,
+            101,
+            115,
+            115,
+            95,
+            109,
+            97,
+            120,
+            34,
+            58,
+            49,
+            48,
+            44,
+            34,
+            112,
+            114,
+            101,
+            115,
+            115,
+            95,
+            109,
+            105,
+            110,
+            34,
+            58,
+            49,
+            44,
+            34,
+            116,
+            101,
+            109,
+            112,
+            95,
+            109,
+            97,
+            120,
+            34,
+            58,
+            52,
+            48,
+            44,
+            34,
+            116,
+            101,
+            109,
+            112,
+            95,
+            109,
+            105,
+            110,
+            34,
+            58,
+            53,
+            125,
+            125
+          ]
+        }
+      },
+      "lastConfigAckTime": null,
+      "state": null,
+      "lastConfigSendTime": null,
+      "blocked": false,
+      "lastStateTime": null,
+      "logLevel": "LOG_LEVEL_UNSPECIFIED",
+      "gatewayConfig": null
+    },
+    "machine": {
+      "id": "s8fbe2c6-f777-48df-abca-6f22f4e2c275",
+      "numId": "2872636266920087",
+      "name": "projects/sgdgroup-iot-uta/locations/europe-west1/registries/test.uta-devices/devices/2872636266920087",
+      "class": "uta",
+      "model": "model_1",
+      "device_code": "TEST-123456",
+      "serial_number": "1234567890",
+      "client_name": "eiusmod in dolor",
+      "client_address": "cupidatat consectetur laboris officia",
+      "hardware": {
+        "pompa": 1,
+        "injectors": [
+          {
+            "status": 0,
+            "label": "Tanica 1",
+            "key": "ini1"
+          },
+          {
+            "status": 0,
+            "label": "Tanica 2",
+            "key": "ini2"
+          },
+          {
+            "status": 0,
+            "label": "Tanica 3",
+            "key": "ini3"
+          }
+        ],
+        "valves": [
+          {
+            "status": 0,
+            "label": "Linea 1",
+            "key": "val1"
+          },
+          {
+            "status": 0,
+            "label": "Linea 2",
+            "key": "val2"
+          },
+          {
+            "status": 0,
+            "label": "Linea 3",
+            "key": "val3"
+          }
+        ],
+        "temp_sensor": true,
+        "temp_max": 40,
+        "temp_min": 5,
+        "press_sensor": false,
+        "press_max": 10,
+        "press_min": 1,
+        "heater_sensor": true,
+        "heater_temp_on": 10,
+        "heater_temp_off": 20
+      }
+    },
+    "project": {
+      "project_id": "sgdgroup-iot-uta",
+      "location": "europe-west1",
+      "registry_id": "test.uta-devices"
+    },
+    "privateKey": "-----BEGIN EC PRIVATE KEY-----\nMHcCAQEEIILdQ7kmS+W8aNK8eBG5FZ5o50mPD+O3hdy3NujZWvLjoAoGCCqGSM49\nAwEHoUQDQgAEEkVgKxcTgQMzyZ0jJ4ehtmbu6h9gk097XeorlzZG2GEbFpaimEoF\n4neinK2NPcmgwz6X8t4dAAatlB1WseSS8A==\n-----END EC PRIVATE KEY-----\n",
+    "privateKeyFileName": "private.s8fbe2c6-f777-48df-abca-6f22f4e2c275.pem",
+    "privateKeyHEX": "00:82:dd:43:b9:26:4b:e5:bc:68:d2:bc:78:11:b9:15:9e:68:e7:49:8f:0f:e3:b7:85:dc:b7:36:e8:d9:5a:f2:e3"
+  }
+}

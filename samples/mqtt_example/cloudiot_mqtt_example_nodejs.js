@@ -86,12 +86,58 @@ const publishAsync = (
   }
 
   setTimeout(() => {
-    const payload = `${argv.registryId}/${argv.deviceId}-payload-${messagesSent}`;
+    //const payload = `${argv.registryId}/${argv.deviceId}-payload-${messagesSent}`;
+    const pTelemetry = JSON.stringify({
+      taskId: "620f5b8a-6635-4132-9c85-6f12078eab43",
+      message: "start",// "stop"
+      telemetry: {
+        temperature: "10",
+        pressure: "1"
+      },
+      wifi: "100"
+    });
+  const pError = JSON.stringify({
+    severity: 1,
+    category: "mqtt",
+    message: "error message",
+    telemetry: {
+      temperature: "20",
+      pressure: "2"
+    },
+    wifi: "200"
+  });
+  const pResolution = JSON.stringify({
+    severity: 1,
+    category: "pression",
+    message: "resolution message",
+    telemetry: {
+      temperature: "30",
+      pressure: "3"
+    },
+    wifi: "300"
+  });
+  const pState = "connected: mqtt nodejs";
+  const cState = "";
+  const cTelemetry = "/telemetry";
+  const cError = "/error";
+  const cResolution = "/resolution";
 
-    // Publish "payload" to the MQTT topic. qos=1 means at least once delivery.
+  let payload;
+  let channel;
+
+  if (mqttTopic.toString().endsWith("state")) {
+    payload = pState;
+    channel = cState;
+  }
+  else {
+    payload = pResolution;
+    channel = cResolution;
+  }
+
+        // Publish "payload" to the MQTT topic. qos=1 means at least once delivery.
     // Cloud IoT Core also supports qos=0 for at most once delivery.
     console.log('Publishing message:', payload);
-    client.publish(mqttTopic, payload, {qos: 1}, err => {
+    client.publish(mqttTopic + channel, payload, {qos: 0}, err => {
       if (!err) {
         shouldBackoff = false;
         backoffTime = MINIMUM_BACKOFF_TIME;
